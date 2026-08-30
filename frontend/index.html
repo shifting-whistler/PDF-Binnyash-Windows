@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>PDF Binnyash</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav>
+    <div class="logo">PDF <i>Binnyash</i></div><button id="hamb" aria-label="Menu">☰</button>
+    <div id="navlinks"><a data-page="home">Home</a>
+      <div class="drop"><button>Tools ▾</button>
+        <div class="menu"><a data-page="merge">Merge PDF</a><a data-page="color">Color Modification</a><a
+            data-page="print">Print Layout</a></div>
+      </div><a data-page="about">About Us</a><a data-page="contact">Contact</a><a id="support">Support</a>
+    </div>
+    <div class="nav-actions"><button id="back" class="nav-action">Back</button><button id="reload"
+        class="nav-action">Reload</button></div><button id="theme" aria-label="Toggle theme">◐</button>
+  </nav>
+  <main id="app"></main>
+  <div id="toast"></div>
+  <div id="loading" class="loading-overlay">
+    <div class="loader-box">
+      <div class="spinner"></div>
+      <div class="loading-text">Processing PDF…</div>
+      <div class="progress-track">
+        <div id="progress-bar" class="progress-bar"></div>
+      </div>
+      <div id="progress-percent" class="progress-percent">0%</div>
+      <div class="loading-small">Please wait — the application is working locally.</div>
+    </div>
+  </div>
+  <div id="modal" class="modal">
+    <div class="modalbox">
+      <div class="support-content">
+        <p class="support-title">Enjoying PDF Binnyash?</p>
+        <p class="support-small">If it's saving you time, a star on GitHub helps other people find it too — takes two
+          seconds.</p>
+        <div class="actions center support-actions">
+          <!-- EDIT-HERE: GitHub star URL is centralized as GITHUB_STAR_URL near the top of script.js -->
+          <a id="support-star" class="btn primary" href="#" target="_blank" rel="noopener noreferrer"
+            style="text-decoration: none; color: white;">★ Give a Star on
+            GitHub</a>
+          <button id="support-dismiss" class="btn subtle" type="button">Dismiss</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
